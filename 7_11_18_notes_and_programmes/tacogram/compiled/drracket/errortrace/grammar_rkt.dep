@@ -1,0 +1,1 @@
+("6.12" ("73552fe41fefc8b3b1537239f99e5abc2e98940c" . "8f0c59646fb5207429574735131fda32b5de73d5") (collects #"brag" #"codegen" #"expander.rkt") (collects #"brag" #"main.rkt") (collects #"errortrace" #"errortrace-key.rkt") (collects #"racket" #"runtime-config.rkt"))

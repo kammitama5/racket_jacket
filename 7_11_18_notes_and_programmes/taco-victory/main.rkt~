@@ -1,0 +1,34 @@
+#lang br/quicklang
+(require brag/support "grammar.rkt")
+(provide (all-from-out br/quicklang) (all-defined-out))
+
+(module+ reader
+  (provide read-syntax))
+
+(define (tokenize ip)
+  ;; smop ···
+  )
+
+(define (taco-program . pieces)
+  ;; smop ···
+  )
+
+(define (taco-leaf . pieces)
+  ;; smop ···
+  )
+
+(define (taco)
+  ;; smop ···
+  )
+
+(define (not-a-taco)
+  ;; smop ···
+  )
+
+(define (read-syntax src ip)
+  (define token-thunk (λ () (tokenize ip)))
+  (define parse-tree (parse token-thunk))
+  (strip-context
+   (with-syntax ([PT parse-tree])
+     #'(module winner taco-victory
+         (display (apply string PT))))))

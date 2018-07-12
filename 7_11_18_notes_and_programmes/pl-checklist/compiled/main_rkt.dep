@@ -1,0 +1,1 @@
+("6.12" ("a9cdbbd373fbc42d22de5394945865025daf48c1" . "15c6488d4d3b94a67e8849b2932d431b9b121c1d") (collects #"pl-checklist-lang-maker" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))

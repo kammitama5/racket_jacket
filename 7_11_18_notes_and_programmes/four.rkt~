@@ -1,0 +1,20 @@
+#lang br/quicklang
+
+(require brag/support "grammar.rkt")
+(provide (all-from-out br/quicklang) (all-defined-out))
+
+(module+ reader
+  (provide read-syntax))
+
+(define (tokenize)
+  ;; returns one token not all the tokens
+    (lexer
+     ["#$" lexeme]
+     ["%" lexeme]
+     [any-char (lex input-port)]))
+
+(define (taco-program . pieces)
+  (void)
+  )
+
+
